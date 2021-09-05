@@ -4,8 +4,13 @@ server:
 spring:
   profiles:
     active: local
+  batch:
+    job:
+      names: ${job.name:NONE}
+
 
 ---
+
 spring:
   config:
     activate:
@@ -16,6 +21,7 @@ spring:
       username: sa
       password:
       driver-class-name: org.h2.Driver
+
 ---
 spring:
   config:
