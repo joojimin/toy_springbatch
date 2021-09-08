@@ -79,7 +79,7 @@ public class DeciderJobConfiguration {
             Random rand = new Random();
 
             int randomNumber = rand.nextInt(50) + 1;
-            log.info("랜덤숫자: {}", randomNumber);
+            log.info("랜덤 숫자: {}", randomNumber);
 
             if(randomNumber % 2 == 0) {
                 return new FlowExecutionStatus("EVEN");
