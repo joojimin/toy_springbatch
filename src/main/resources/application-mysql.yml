@@ -6,7 +6,7 @@ spring:
     hikari:
       jdbc-url: jdbc:mysql://localhost:3306/toy_spring_batch?serverTimezone=UTC&characterEncoding=UTF-8
       username: root
-      password: 1234
+      password:
       driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
