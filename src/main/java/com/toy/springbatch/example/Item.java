@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import lombok.AccessLevel;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.context.annotation.Profile;
 
@@ -21,6 +22,7 @@ public class Item {
     private String name;
 
     @Column(nullable = false)
+    @Getter
     private Long price;
 
     public Item(String name, Long price) {

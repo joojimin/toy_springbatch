@@ -9,6 +9,8 @@ import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import org.springframework.context.annotation.Profile;
 
+import java.util.Objects;
+
 @Profile("example")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
@@ -29,5 +31,12 @@ public class OrderItems {
     public OrderItems(Orders orders, Item item) {
         this.orders = orders;
         this.item = item;
+    }
+
+    public Long getPrice() {
+        if (Objects.isNull(item)) {
+            return 0l;
+        }
+        return item.getPrice();
     }
 }
