@@ -1,3 +1,3 @@
 # toy_springbatch
 
-SpringBatch 실습
+SpringBatch + JPA 실습
