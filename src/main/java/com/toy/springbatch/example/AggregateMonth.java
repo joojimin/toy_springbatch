@@ -9,6 +9,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
 
+import org.springframework.context.annotation.Profile;
+
+@Profile("example")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
 public class AggregateMonth {
